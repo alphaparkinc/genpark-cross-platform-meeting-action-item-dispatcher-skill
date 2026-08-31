@@ -1,0 +1,38 @@
+{
+  "name": "genpark-cross-platform-meeting-action-item-dispatcher-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Cross-platform meeting transcription synthesizer extracting structured action items and syncing tasks across workspaces.",
+  "author": "genpark",
+  "category": "productivity-ai",
+  "tags": [
+    "producthunt",
+    "granola",
+    "meeting-assistant",
+    "action-item-extractor",
+    "workspace-sync"
+  ],
+  "inputs": {
+    "transcript_markdown": {
+      "type": "string"
+    },
+    "sync_integrations": {
+      "type": "array"
+    }
+  },
+  "outputs": {
+    "dispatch_job_id": {
+      "type": "string"
+    },
+    "extracted_action_items_count": {
+      "type": "integer"
+    },
+    "workspace_sync_status": {
+      "type": "string"
+    },
+    "dashboard_summary_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
